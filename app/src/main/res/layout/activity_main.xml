@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ht2s.simplecalculator.MainActivity">
+
+
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/edtext1"
+    android:width="200dp"
+    />
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/edtext2"
+    android:layout_below="@+id/edtext1"
+    android:width="200dp"
+    />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtext2"
+        android:onClick="add"
+        android:text="ADD"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textview1"
+    android:layout_below="@+id/button1"
+    android:textSize="30sp"
+
+    />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtext2"
+        android:layout_below="@+id/edtext2"
+        android:onClick="sub"
+        android:text="SUBTRACT"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtext2"
+        android:layout_toEndOf="@+id/edtext2"
+        android:onClick="mul"
+        android:text="MULTIPLY"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:onClick="div"
+        android:text="DIVIDE"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
