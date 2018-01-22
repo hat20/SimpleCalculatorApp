@@ -39,10 +39,9 @@
         android:id="@+id/textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:textSize="30sp"
-
-        />
+        android:layout_marginTop="250dp"
+        android:background="@android:color/transparent"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/button1"
@@ -62,7 +61,6 @@
         android:layout_below="@+id/edtext2"
         android:layout_marginStart="34dp"
         android:layout_marginTop="84dp"
-        android:layout_toEndOf="@+id/textview1"
         android:onClick="mul"
         android:text="MULTIPLY" />
 
