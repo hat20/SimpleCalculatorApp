@@ -5,5 +5,7 @@ you click the button of the action you want to perform i.e. Addition, Subtractio
 
 I ran the application on -
 Android Studio v3.0.1
+
+Android Emulator used -
 Nexus 5X - API 24
 
