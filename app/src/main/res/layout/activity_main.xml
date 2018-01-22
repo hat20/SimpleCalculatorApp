@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,73 +7,74 @@
     tools:context="com.example.ht2s.simplecalculator.MainActivity">
 
 
+    <EditText
+        android:id="@+id/edtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:width="200dp"
+        android:inputType="number" />
 
-<EditText
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/edtext1"
-    android:width="200dp"
-    />
-<EditText
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/edtext2"
-    android:layout_below="@+id/edtext1"
-    android:width="200dp"
-    />
+    <EditText
+        android:id="@+id/edtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtext1"
+        android:layout_below="@+id/edtext1"
+        android:width="200dp"
+        android:inputType="number" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
         android:layout_below="@+id/edtext2"
+        android:layout_marginTop="16dp"
         android:onClick="add"
-        android:text="ADD"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="72dp" />
+        android:text="ADD" />
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/textview1"
-    android:layout_below="@+id/button1"
-    android:textSize="30sp"
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:textSize="30sp"
 
-    />
+        />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/edtext2"
-        android:layout_below="@+id/edtext2"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignStart="@+id/button3"
         android:onClick="sub"
-        android:text="SUBTRACT"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="149dp" />
+        android:text="SUBTRACT" />
+
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edtext2"
-        android:layout_toEndOf="@+id/edtext2"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="84dp"
+        android:layout_toEndOf="@+id/textview1"
         android:onClick="mul"
-        android:text="MULTIPLY"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="65dp" />
+        android:text="MULTIPLY" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button2"
         android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginEnd="45dp"
         android:onClick="div"
-        android:text="DIVIDE"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="65dp" />
+        android:text="DIVIDE" />
 
 </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
 
